@@ -1,16 +1,22 @@
+.about {
+  border: solid;
+}
+
 .user {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .user-stats {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.comb {
+  display: flex;
+  align-items: center;
 }
 
 .user-icon {
   width: 3em;
-}
-
-.dark-mode {
-  display: flex;
 }

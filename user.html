@@ -16,7 +16,7 @@
       <h1>User's Name</h1>
     </div>
     <main>
-      <section>
+      <section class="about">
         <h2>About me</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim alias
@@ -27,24 +27,41 @@
       </section>
       <section>
         <div class="user-stats">
-          <span
-            ><img class="user-icon" src="icons/qna.jpg" alt="QnA icon" />8</span
+          <span class="comb"
+            ><img class="user-icon" src="icons/qna.jpg" alt="QnA icon" />
+            <h3>8</h3></span
           >
-          <span
+          <span class="comb"
             ><img
               class="user-icon"
               src="icons/bookmarked.png"
               alt="bookmarked icon"
-            />10</span
-          >
+            />
+            <h3>10</h3>
+          </span>
         </div>
       </section>
       <section>
         <h2>Settings</h2>
-        <div class="dark-mode">
-          <h3>Dark Mode</h3>
-          <input type="checkbox" id="switch" />
-        </div>
+        <fieldset>
+          <legend>Preferred mode:</legend>
+
+          <div>
+            <input
+              type="radio"
+              id="classic"
+              name="drone"
+              value="classic"
+              checked
+            />
+            <label for="classic">Classic Mode</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dark" name="drone" value="dark" />
+            <label for="dark">Dark Mode</label>
+          </div>
+        </fieldset>
       </section>
     </main>
     <footer>
