@@ -1,0 +1,16 @@
+.user {
+  display: flex;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: center;
+}
+
+.user-icon {
+  width: 3em;
+}
+
+.dark-mode {
+  display: flex;
+}
