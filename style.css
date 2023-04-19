@@ -12,6 +12,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: solid;
+  margin-top: -24px;
+  margin-bottom: 48px;
 }
 
 header {
@@ -75,8 +77,10 @@ input:focus + span.answer {
 footer {
   background-color: black;
   position: fixed;
+  z-index: 1;
   width: 80%;
   bottom: 0px;
+  height: 48px;
   border-top: solid;
   border-bottom: solid;
 
