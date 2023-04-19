@@ -1,3 +1,5 @@
+@import "css/user.css";
+
 /* * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +33,7 @@ section {
 }
 
 .bookmark {
-  width: 6%;
+  width: 2em;
   position: absolute;
   top: -15px;
   right: 10px;
