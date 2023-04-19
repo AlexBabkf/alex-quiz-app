@@ -1,0 +1,60 @@
+body {
+  background-color: blanchedalmond;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+}
+
+header {
+  border-bottom: solid;
+  text-align: center;
+}
+
+section {
+  background-color: beige;
+  border: solid;
+  margin: 30px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookmark {
+  width: 6%;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.show-answer {
+  width: 30%;
+}
+
+.tag-group {
+  box-sizing: border-box;
+  height: 65px;
+  display: flex;
+}
+
+.tag {
+  background-color: tan;
+  margin: 10px;
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  width: 80%;
+  bottom: 0px;
+  border: solid;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  width: 50%;
+}
