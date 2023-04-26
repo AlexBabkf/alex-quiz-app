@@ -1,5 +1,13 @@
-.about {
+/* * {
+  margin-bottom: 8px;
+} */
+
+fieldset {
   border: solid;
+}
+
+legend {
+  font-size: large;
 }
 
 .user {
