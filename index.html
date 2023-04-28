@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Homepage</title>
   </head>
   <body>
@@ -15,9 +16,9 @@
       <section class="question">
         <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
         <h3>Question?</h3>
-        <input type="button" value="Show Answer" /><span class="answer"
-          >This is the answer</span
-        >
+        <button onclick="showText()">Show Answer</button>
+        <p id="hiddenText" style="display: none">This is the answer</p>
+
         <span class="tag-group">
           <a class="tag" href="">#tag1</a>
           <a class="tag" href="">#tag2</a>
@@ -27,14 +28,13 @@
       <section class="question">
         <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
         <h3>Question?</h3>
-        <input type="button" value="Show Answer" /><span class="answer"
-          >This is the answer</span
-        >
-        <span class="tag-group">
+        <input type="button" value="Show Answer" data-js="reveal-answer" />
+        <div class="answer" data-js="answer" hidden>This is the answer</div>
+        <div class="tag-group">
           <a class="tag" href="">#tag1</a>
           <a class="tag" href="">#tag2</a>
           <a class="tag" href="">#tag3</a>
-        </span>
+        </div>
       </section>
       <section class="question">
         <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
@@ -60,5 +60,6 @@
         ><img class="footer-icon" src="icons/user.png" alt=""
       /></a>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
