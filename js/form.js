@@ -1,3 +1,27 @@
+// Get character amount
+
+const q = document.querySelector('[data-js="q"]');
+const ans = document.querySelector('[data-js="a"]');
+
+const qchar = document.querySelector('[data-js="qchar"]');
+qchar.textContent = `${q.getAttribute("maxlength")} characters left`;
+
+q.addEventListener("input", (event) => {
+  qchar.textContent = `${
+    q.getAttribute("maxlength") - event.target.value.length
+  } characters left`;
+});
+
+const achar = document.querySelector('[data-js="achar"]');
+achar.textContent = `${ans.getAttribute("maxlength")} characters left`;
+
+ans.addEventListener("input", (event) => {
+  achar.textContent = `${
+    ans.getAttribute("maxlength") - event.target.value.length
+  } characters left`;
+});
+
+// Submit effects
 const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
@@ -39,7 +63,7 @@ form.addEventListener("submit", (event) => {
 
   const a = document.createElement("a");
   a.setAttribute("class", "tag");
-  a.textContent = tag;
+  a.textContent = `#${tag}`;
 
   div2.append(a);
   section.append(img, h3, input, div, div2);

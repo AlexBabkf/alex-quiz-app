@@ -22,8 +22,11 @@
           cols="30"
           rows="10"
           placeholder="Please enter your question"
+          maxlength="50"
+          data-js="q"
         ></textarea>
         <br />
+        <div data-js="qchar"></div>
         <label for="answer">Your Answer:</label>
         <br />
         <textarea
@@ -32,8 +35,11 @@
           cols="30"
           rows="10"
           placeholder="Please enter your answer"
+          maxlength="30"
+          data-js="a"
         ></textarea>
         <br />
+        <div data-js="achar"></div>
         <label for="tags">Tags</label>
         <br />
         <input type="text" id="tags" name="tags" />
