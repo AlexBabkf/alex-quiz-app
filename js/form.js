@@ -74,5 +74,4 @@ form.addEventListener("submit", (event) => {
   main.appendChild(section);
 
   form.reset();
-  qchar.reset();
 });

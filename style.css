@@ -15,6 +15,7 @@ header {
   color: white;
   border-bottom: solid;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .question:nth-child(odd) {
@@ -50,17 +51,6 @@ input {
   cursor: pointer;
   width: 30%;
 }
-
-/*  @@  Show / Reveal answer without Javascript  @@ */
-
-/* input:focus + .answer {
-  display: block;
-  margin-top: 5px;
-}
-
-.answer {
-  display: none;
-} */
 
 .answer {
   margin: 15px;

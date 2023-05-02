@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Homepage</title>
+    <title>Profile Page</title>
   </head>
   <body>
     <header>
@@ -13,7 +13,7 @@
     </header>
     <div class="user">
       <img src="assets/profile.png" alt="User IAGE" />
-      <h1>User's Name</h1>
+      <h1>User Name</h1>
     </div>
     <main>
       <section>
@@ -46,21 +46,14 @@
       <section>
         <fieldset>
           <legend>Settings</legend>
-
-          <div>
-            <input
-              type="radio"
-              id="classic"
-              name="drone"
-              value="classic"
-              checked
-            />
-            <label for="classic">Classic Mode</label>
-          </div>
-
-          <div>
-            <input type="radio" id="dark" name="drone" value="dark" />
-            <label for="dark">Dark Mode</label>
+          
+          <div class="theme-switch-container">
+            <p>Dark Mode</p>
+            <label class="theme-slider" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="round slider"></div>
+            </label>
+        </div>
           </div>
         </fieldset>
       </section>
