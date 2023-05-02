@@ -1,0 +1,25 @@
+.main {
+  margin: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+  width: 99%;
+  margin-top: 18px;
+}
+
+label {
+  font-size: large;
+}
+
+.qchar,
+.achar {
+  text-align: right;
+  margin: 20px;
+}
+
+.q-tag {
+  width: 99%;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}

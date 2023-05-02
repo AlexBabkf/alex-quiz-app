@@ -61,13 +61,18 @@ form.addEventListener("submit", (event) => {
   const div2 = document.createElement("div");
   div2.setAttribute("class", "tag-group");
 
-  const a = document.createElement("a");
-  a.setAttribute("class", "tag");
-  a.textContent = `#${tag}`;
+  if (tag) {
+    const a = document.createElement("a");
+    a.setAttribute("class", "tag");
+    a.textContent = `#${tag}`;
+    div2.append(a);
+  }
 
-  div2.append(a);
   section.append(img, h3, input, div, div2);
 
   const main = document.querySelector("main");
   main.appendChild(section);
+
+  form.reset();
+  qchar.reset();
 });
