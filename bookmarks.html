@@ -13,40 +13,20 @@
     </header>
     <main>
       <section class="question">
-        <img class="bookmark" src="icons/bookmarked.png" alt="bookmark" />
+        <img
+          class="bookmark"
+          src="assets/bookmark_filled.png"
+          alt="bookmark"
+          data-js="icon"
+        />
         <h3>Question?</h3>
-        <input type="button" value="Show Answer" /><span class="answer"
-          >This is the answer</span
-        >
-        <span class="tag-group">
+        <input type="button" value="Show Answer" data-js="reveal-answer" />
+        <div class="answer" data-js="answer"></div>
+        <div class="tag-group">
           <a class="tag" href="">#tag1</a>
           <a class="tag" href="">#tag2</a>
           <a class="tag" href="">#tag3</a>
-        </span>
-      </section>
-      <section class="question">
-        <img class="bookmark" src="icons/bookmarked.png" alt="bookmark" />
-        <h3>Question?</h3>
-        <input type="button" value="Show Answer" /><span class="answer"
-          >This is the answer</span
-        >
-        <span class="tag-group">
-          <a class="tag" href="">#tag1</a>
-          <a class="tag" href="">#tag2</a>
-          <a class="tag" href="">#tag3</a>
-        </span>
-      </section>
-      <section class="question">
-        <img class="bookmark" src="icons/bookmarked.png" alt="bookmark" />
-        <h3>Question?</h3>
-        <input type="button" value="Show Answer" /><span class="answer"
-          >This is the answer</span
-        >
-        <span class="tag-group">
-          <a class="tag" href="">#tag1</a>
-          <a class="tag" href="">#tag2</a>
-          <a class="tag" href="">#tag3</a>
-        </span>
+        </div>
       </section>
     </main>
     <footer>
@@ -66,5 +46,6 @@
         ><img class="footer-icon" src="assets/plus.png" alt="question-page"
       /></a>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
