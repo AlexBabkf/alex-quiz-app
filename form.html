@@ -12,8 +12,8 @@
     <header>
       <h1>Alex's Quiz App</h1>
     </header>
-    <main>
-      <form>
+    <main class="main">
+      <form data-js="form">
         <label for="question">Your Question:</label>
         <br />
         <textarea
@@ -22,8 +22,11 @@
           cols="30"
           rows="10"
           placeholder="Please enter your question"
+          maxlength="50"
+          data-js="q"
         ></textarea>
         <br />
+        <div data-js="qchar"></div>
         <label for="answer">Your Answer:</label>
         <br />
         <textarea
@@ -32,8 +35,11 @@
           cols="30"
           rows="10"
           placeholder="Please enter your answer"
+          maxlength="30"
+          data-js="a"
         ></textarea>
         <br />
+        <div data-js="achar"></div>
         <label for="tags">Tags</label>
         <br />
         <input type="text" id="tags" name="tags" />
@@ -58,6 +64,6 @@
         ><img class="footer-icon" src="assets/question.png" alt="question-page"
       /></a>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
