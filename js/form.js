@@ -1,25 +1,23 @@
+console.clear();
 // Get character amount
 
 const q = document.querySelector('[data-js="q"]');
 const ans = document.querySelector('[data-js="a"]');
 
-const qchar = document.querySelector('[data-js="qchar"]');
-qchar.textContent = `${q.getAttribute("maxlength")} characters left`;
+function remainingChars(textArea, numOfChars) {
+  const charNum = document.querySelector(`[data-js="${numOfChars}"]`);
+  console.log(charNum);
+  charNum.textContent = `${textArea.getAttribute("maxlength")} characters left`;
 
-q.addEventListener("input", (event) => {
-  qchar.textContent = `${
-    q.getAttribute("maxlength") - event.target.value.length
-  } characters left`;
-});
+  textArea.addEventListener("input", (event) => {
+    charNum.textContent = `${
+      textArea.getAttribute("maxlength") - event.target.value.length
+    } characters left`;
+  });
+}
 
-const achar = document.querySelector('[data-js="achar"]');
-achar.textContent = `${ans.getAttribute("maxlength")} characters left`;
-
-ans.addEventListener("input", (event) => {
-  achar.textContent = `${
-    ans.getAttribute("maxlength") - event.target.value.length
-  } characters left`;
-});
+remainingChars(q, "qchar");
+remainingChars(ans, "achar");
 
 // Submit effects
 const form = document.querySelector('[data-js="form"]');
@@ -74,4 +72,5 @@ form.addEventListener("submit", (event) => {
   main.appendChild(section);
 
   form.reset();
+  q.focus();
 });
