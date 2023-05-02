@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alex's Quiz App</h1>
+    </header>
+    <main>
+      <form>
+        <label for="question">Your Question:</label>
+        <br />
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="10"
+          placeholder="Please enter your question"
+        ></textarea>
+        <br />
+        <label for="answer">Your Answer:</label>
+        <br />
+        <textarea
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          placeholder="Please enter your answer"
+        ></textarea>
+        <br />
+        <label for="tags">Tags</label>
+        <br />
+        <input type="text" id="tags" name="tags" />
+        <br />
+        <input type="submit" value="Submit Question!" />
+      </form>
+    </main>
+    <footer>
+      <a class="icon" href="index.html"
+        ><img class="footer-icon" src="assets/home.png" alt="homepage"
+      /></a>
+      <a class="icon" href="bookmarks.html"
+        ><img
+          class="footer-icon"
+          src="assets/bookmark_transparent.png"
+          alt="bookmark-page"
+      /></a>
+      <a class="icon" href="user.html"
+        ><img class="footer-icon" src="assets/profile.png" alt="profile-page"
+      /></a>
+      <a class="icon" href="forms.html"
+        ><img class="footer-icon" src="assets/question.png" alt="question-page"
+      /></a>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
