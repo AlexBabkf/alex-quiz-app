@@ -14,19 +14,7 @@
     </header>
     <main>
       <section class="question">
-        <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
-        <h3>Question?</h3>
-        <button onclick="showText()">Show Answer</button>
-        <p id="hiddenText" style="display: none">This is the answer</p>
-
-        <span class="tag-group">
-          <a class="tag" href="">#tag1</a>
-          <a class="tag" href="">#tag2</a>
-          <a class="tag" href="">#tag3</a>
-        </span>
-      </section>
-      <section class="question">
-        <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
+        <img class="bookmark" src="assets/bookmark.png" alt="bookmark" />
         <h3>Question?</h3>
         <input type="button" value="Show Answer" data-js="reveal-answer" />
         <div class="answer" data-js="answer" hidden>This is the answer</div>
@@ -37,27 +25,41 @@
         </div>
       </section>
       <section class="question">
-        <img class="bookmark" src="icons/bookmark.png" alt="bookmark" />
+        <img class="bookmark" src="assets/bookmark.png" alt="bookmark" />
+        <h3>Question?</h3>
+        <input type="button" value="Show Answer" data-js="reveal-answer" />
+        <div class="answer" data-js="answer" hidden>This is the answer</div>
+        <div class="tag-group">
+          <a class="tag" href="">#tag1</a>
+          <a class="tag" href="">#tag2</a>
+          <a class="tag" href="">#tag3</a>
+        </div>
+      </section>
+      <section class="question">
+        <img class="bookmark" src="assets/bookmark.png" alt="bookmark" />
         <h3>Question?</h3>
         <input type="button" value="Show Answer" /><span class="answer"
           >This is the answer</span
         >
-        <span class="tag-group">
+        <div class="tag-group">
           <a class="tag" href="">#tag1</a>
           <a class="tag" href="">#tag2</a>
           <a class="tag" href="">#tag3</a>
-        </span>
+        </div>
       </section>
     </main>
     <footer>
       <a class="icon" href="index.html"
-        ><img class="footer-icon" src="icons/home.png" alt="bookmarks"
+        ><img class="footer-icon" src="assets/home_filled.png" alt="homepage"
       /></a>
       <a class="icon" href="bookmarks.html"
-        ><img class="footer-icon" src="icons/bookmark.png" alt=""
+        ><img
+          class="footer-icon"
+          src="assets/bookmark_transparent.png"
+          alt="bookmark-page"
       /></a>
       <a class="icon" href="user.html"
-        ><img class="footer-icon" src="icons/user.png" alt=""
+        ><img class="footer-icon" src="assets/profile.png" alt="profile-page"
       /></a>
     </footer>
     <script src="./js/index.js"></script>
