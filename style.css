@@ -1,10 +1,5 @@
 @import "css/user.css";
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  } */
+@import "css/form.css";
 
 body {
   background-color: white;
@@ -66,6 +61,10 @@ input {
 .answer {
   display: none;
 } */
+
+.answer {
+  margin: 15px;
+}
 
 .tag-group {
   width: 100%;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Homepage</title>
+    <title>Add Question</title>
   </head>
   <body>
     <header>
@@ -14,36 +14,43 @@
     </header>
     <main class="main">
       <form data-js="form">
-        <label for="question">Your Question:</label>
-        <br />
-        <textarea
-          name="question"
-          id="question"
-          cols="30"
-          rows="10"
-          placeholder="Please enter your question"
-          maxlength="50"
-          data-js="q"
-        ></textarea>
-        <br />
-        <div data-js="qchar"></div>
-        <label for="answer">Your Answer:</label>
-        <br />
-        <textarea
-          name="answer"
-          id="answer"
-          cols="30"
-          rows="10"
-          placeholder="Please enter your answer"
-          maxlength="30"
-          data-js="a"
-        ></textarea>
-        <br />
-        <div data-js="achar"></div>
-        <label for="tags">Tags</label>
-        <br />
-        <input type="text" id="tags" name="tags" />
-        <br />
+        <section>
+          <label for="question">Your Question:</label>
+          <div>
+            <textarea
+              name="question"
+              id="question"
+              cols="30"
+              rows="10"
+              placeholder="Please enter your question"
+              maxlength="50"
+              data-js="q"
+              required
+              autofocus
+            ></textarea>
+          </div>
+          <div class="qchar" data-js="qchar"></div>
+        </section>
+        <section>
+          <label for="answer">Your Answer:</label>
+          <div>
+            <textarea
+              name="answer"
+              id="answer"
+              cols="30"
+              rows="10"
+              placeholder="Please enter your answer"
+              maxlength="30"
+              data-js="a"
+              required
+            ></textarea>
+          </div>
+          <div class="achar" data-js="achar"></div>
+        </section>
+        <section>
+          <label for="tags">Tags: </label>
+          <input class="q-tag" type="text" id="tags" name="tags" />
+        </section>
         <input type="submit" value="Submit Question!" />
       </form>
     </main>
@@ -61,7 +68,10 @@
         ><img class="footer-icon" src="assets/profile.png" alt="profile-page"
       /></a>
       <a class="icon" href="forms.html"
-        ><img class="footer-icon" src="assets/question.png" alt="question-page"
+        ><img
+          class="footer-icon"
+          src="assets/plusBlack.png"
+          alt="question-page"
       /></a>
     </footer>
     <script src="./js/form.js"></script>
